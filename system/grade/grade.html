@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MDB icon -->
+    <link rel="icon" href="../../resources/svg/stars.svg" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../MDB-Pro-4.12/MDB-Pro-4.12/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../../MDB-Pro-4.12/MDB-Pro-4.12/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="./grade.css">
+    
+    <title>成绩</title>
+</head>
+<body>
+    
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light primary-color">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../main/main.html">教务系统</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="../main/main.html">主页</a>
+                  <a class="nav-link" href="../course/course.html">课程</a>
+                  <a class="nav-link active" href="#">成绩</a>
+                  <a class="nav-link" href="../other/other.html">其他</a>
+                  <a class="nav-link" href="../report/report.html">报告</a>
+                </div>
+              </div>
+               
+              <!-- 下拉列表 -->
+              <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-user-alt"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#" id="exit-a">登出</a>
+                  </div>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- Navbar -->
+      
+    </header>
+
+
+    <main  class="mt-5" id="main">
+        <div class="container">
+            <div class="col-12">
+                <!-- Pills navs -->
+                <ul class="nav nav-pills mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                    <a  class="nav-link the-tab active" id="ex1-tab-1" data-mdb-toggle="pill" t-title="#ex1-pills-1"
+                        role="tab" aria-controls="ex1-pills-1" aria-selected="true">
+                        2019
+                    </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <a class="nav-link the-tab" id="ex1-tab-2" data-mdb-toggle="pill" t-title="#ex1-pills-2"
+                       role="tab" aria-controls="ex1-pills-2" aria-selected="false">
+                       2020
+                    </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <a class="nav-link the-tab" id="ex1-tab-3" data-mdb-toggle="pill" t-title="#ex1-pills-3"
+                       role="tab" aria-controls="ex1-pills-3" aria-selected="false">
+                       绩点
+                    </a >
+                    </li>
+                </ul>
+                <!-- Pills navs -->
+                
+                <!-- Pills content -->
+                <div class="tab-content" id="ex1-content">
+                    <!-- 内容1 -->
+                    <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                        <table class="table table-hover table-bordered border-dark">
+                            <thead>
+                              <tr>
+                                <th scope="col">课程编号</th>
+                                <th scope="col">开课年份</th>
+                                <th scope="col">课程名称</th>
+                                <th scope="col">成绩</th>
+                                <th scope="col">学分</th>
+                                <th scope="col">总学时</th>
+                                <th scope="col">课程属性</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>190001</td>
+                                <td>2019</td>
+                                <td>思想道德修养与法律基础</td>
+                                <td>80</td>
+                                <td>2.5</td>
+                                <td>40</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190002</td>
+                                <td>2019</td>
+                                <td>军训</td>
+                                <td>优</td>
+                                <td>2</td>
+                                <td>32</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190003</td>
+                                <td>2019</td>
+                                <td>大学体育（基础课）Ⅰ</td>
+                                <td>80</td>
+                                <td>1</td>
+                                <td>32</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190004</td>
+                                <td>2019</td>
+                                <td>思想道德修养与法律基础</td>
+                                <td>80</td>
+                                <td>2.5</td>
+                                <td>40</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190005</td>
+                                <td>2019</td>
+                                <td>大学英语</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190006</td>
+                                <td>2019</td>
+                                <td>高等数学AI</td>
+                                <td>80</td>
+                                <td>5</td>
+                                <td>80</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190007</td>
+                                <td>2019</td>
+                                <td>计算机类专业导论</td>
+                                <td>85</td>
+                                <td>1</td>
+                                <td>16</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190008</td>
+                                <td>2019</td>
+                                <td>高级语言程序设计A</td>
+                                <td>95</td>
+                                <td>5</td>
+                                <td>80</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190009</td>
+                                <td>2019</td>
+                                <td>计算思维综合实践I</td>
+                                <td>优</td>
+                                <td>2</td>
+                                <td>64</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190010</td>
+                                <td>2019</td>
+                                <td>军事理论</td>
+                                <td>85</td>
+                                <td>2</td>
+                                <td>32</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190011</td>
+                                <td>2019</td>
+                                <td>中国近现代史纲要</td>
+                                <td>85</td>
+                                <td>2.5</td>
+                                <td>40</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190012</td>
+                                <td>2019</td>
+                                <td>线性代数</td>
+                                <td>85</td>
+                                <td>2.5</td>
+                                <td>40</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>190013</td>
+                                <td>2019</td>
+                                <td>离散数学I</td>
+                                <td>95</td>
+                                <td>3</td>
+                                <td>48</td>
+                                <td>必修</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 内容2 -->
+                    <div class="tab-pane fade show" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <table class="table table-hover table-bordered border-dark">
+                            <thead>
+                              <tr>
+                                <th scope="col">课程编号</th>
+                                <th scope="col">开课年份</th>
+                                <th scope="col">课程名称</th>
+                                <th scope="col">成绩</th>
+                                <th scope="col">学分</th>
+                                <th scope="col">总学时</th>
+                                <th scope="col">课程属性</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>200001</td>
+                                <td>2020</td>
+                                <td>大学体育（基础课）II</td>
+                                <td>80</td>
+                                <td>1</td>
+                                <td>32</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200002</td>
+                                <td>2020</td>
+                                <td>大学英语（Ⅱ）</td>
+                                <td>80</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200003</td>
+                                <td>2020</td>
+                                <td>职业生涯与就业指导（I）</td>
+                                <td>80</td>
+                                <td>0.5</td>
+                                <td>8</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200004</td>
+                                <td>2020</td>
+                                <td>高等数学AII</td>
+                                <td>85</td>
+                                <td>5</td>
+                                <td>80</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200005</td>
+                                <td>2020</td>
+                                <td>大学物理A（Ⅰ）</td>
+                                <td>90</td>
+                                <td>3</td>
+                                <td>48</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200006</td>
+                                <td>2020</td>
+                                <td>面向对象程序设计A</td>
+                                <td>90</td>
+                                <td>3.5</td>
+                                <td>56</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200007</td>
+                                <td>2020</td>
+                                <td>计算思维综合实践II</td>
+                                <td>优</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200008</td>
+                                <td>2020</td>
+                                <td>Linux操作系统B</td>
+                                <td>75</td>
+                                <td>1</td>
+                                <td>16</td>
+                                <td>选修</td>
+                              </tr>
+                              <tr>
+                                <td>200009</td>
+                                <td>2020</td>
+                                <td>大学生心理健康教育</td>
+                                <td>95</td>
+                                <td>2</td>
+                                <td>32</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200010</td>
+                                <td>2020</td>
+                                <td>程序设计方法及在线实践</td>
+                                <td>95</td>
+                                <td>2</td>
+                                <td>32</td>
+                                <td>选修</td>
+                              </tr>
+                              <tr>
+                                <td>200011</td>
+                                <td>2020</td>
+                                <td>天文漫谈(智慧树)</td>
+                                <td>95</td>
+                                <td>1</td>
+                                <td>16</td>
+                                <td>选修</td>
+                              </tr>
+                              <tr>
+                                <td>200012</td>
+                                <td>2020</td>
+                                <td>数据结构A</td>
+                                <td>90</td>
+                                <td>5</td>
+                                <td>80</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200013</td>
+                                <td>2020</td>
+                                <td>模拟与数字电路技术</td>
+                                <td>80</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>必修</td>
+                              </tr>
+                              <tr>
+                                <td>200014</td>
+                                <td>2020</td>
+                                <td>大学物理实验 A</td>
+                                <td>90</td>
+                                <td>1.5</td>
+                                <td>24</td>
+                                <td>必修</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 内容3 -->
+                    <div class="tab-pane fade show" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <div class="row">
+                          <div class="col-md-1"></div>
+                          <div class="col-md-10">
+                            <!-- Card deck -->
+                            <div class="card-deck">
+
+                              <!-- Card -->
+                              <div class="card mb-4">
+
+                                <!--Card image-->
+                                <div class="view text-center overlay"><!--fa-award-->
+                                  <i class="fas fa-award fa-8x text-primary"></i>
+                                  <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                  </a>
+                                  <p class="at-content">
+                                    年级最高绩点: 4.5
+                                  </p>
+                                </div>
+                                <hr>
+
+                                <!--Card content-->
+                                <div class="card-body">
+
+                                  <!--Title-->
+                                  <h4 class="card-title text-center">绩点</h4>
+                                  <br/>
+                                  <!--Text-->
+                                  <p class="card-text">
+                                    <div class="row border-left border-primary">
+                                      <div class="col-2"></div>
+                                      <div class="col-4 at-before">绩点:</div>
+                                      <div class="col-4 at-last">3.5</div>
+                                      <div class="col-2"></div>
+                                    </div>
+                                    <br/>
+                                  <!--Text-->
+                                    <div class="row border-left border-primary">
+                                      <div class="col-2"></div>
+                                      <div class="col-4 at-before">加权平均成绩:</div>
+                                      <div class="col-4 at-last">85</div>
+                                      <div class="col-2"></div>
+                                    </div>
+                                    <br/>
+                                  </p>
+                                </div>
+
+                              </div>
+                              <!-- Card -->
+
+                              <!-- Card -->
+                              <div class="card mb-4">
+
+                                <!--Card image-->
+                                <div class="view overlay text-center">
+                                  <i class="fas fa-star fa-8x text-primary"></i>
+                                  <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                  </a>
+                                  <br/>
+                                  <p class="at-content">
+                                    年级平均已修学分: 80
+                                  </p>
+                                </div>
+                                <hr/>
+
+                                <!--Card content-->
+                                <div class="card-body">
+
+                                  <!--Title-->
+                                  <h4 class="card-title text-center">学分</h4>
+                                  <br/>
+                                  <!--Text-->
+                                  <p class="card-text">
+                                    <div class="row border-left border-primary">
+                                      <div class="col-1"></div>
+                                      <div class="col-5 at-before">已修学分:</div>
+                                      <div class="col-5 at-last">81.5</div>
+                                      <div class="col-1"></div>
+                                    </div>
+                                    <br/>
+                                    <div class="row border-left border-primary">
+                                      <div class="col-1"></div>
+                                      <div class="col-5 at-before">要求学分:</div>
+                                      <div class="col-5 at-last">162</div>
+                                      <div class="col-1"></div>
+                                    </div>
+                                    <br/>
+                                    <div class="row border-left border-primary">
+                                      <div class="col-1"></div>
+                                      <div class="col-5 at-before">还需学分:</div>
+                                      <div class="col-5 at-last">80.5</div>
+                                      <div class="col-1"></div>
+                                    </div>
+                                    <br/>
+                                  </p>
+                                </div>
+
+                              </div>
+                              <!-- Card -->
+
+                              <!-- Card -->
+                              <div class="card mb-4">
+
+                                <!--Card image-->
+                                <div class="view overlay text-center"><!--fa-stream fa-balance-scale-->
+                                  <i class="fas fa-stream  fa-8x text-primary"></i>
+                                  <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                  </a>
+                                  <br/>
+                                  <p class="at-content">
+                                    你超越了76.4%的学生
+                                  </p>
+                                </div>
+                                <hr/>
+
+                                <!--Card content-->
+                                <div class="card-body">
+
+                                  <!--Title-->
+                                  <h4 class="card-title text-center">排名</h4>
+                                  <br/>
+                                  <!--Text-->
+                                  <p class="card-text">
+                                    <div class="row border-left border-primary">
+                                      <div class="col-1"></div>
+                                      <div class="col-5 at-before">班级排名:</div>
+                                      <div class="col-5 at-last">10</div>
+                                      <div class="col-1"></div>
+                                    </div>
+                                    <br/>
+                                    <div class="row border-left border-primary">
+                                      <div class="col-1"></div>
+                                      <div class="col-5 at-before">年级排名:</div>
+                                      <div class="col-5 at-last">50</div>
+                                      <div class="col-1"></div>
+                                    </div>
+                                    <br/>
+                                    <div class="row border-left border-primary">
+                                      <div class="col-1"></div>
+                                      <div class="col-5 at-before">总人数:</div>
+                                      <div class="col-5 at-last">212</div>
+                                      <div class="col-1"></div>
+                                    </div>
+                                    <br/>
+                                  </p>
+                                </div>
+
+                              </div>
+                              <!-- Card -->
+
+                            </div>
+                            <!-- Card deck -->
+                          </div>
+                          <div class="col-md-1"></div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Pills content -->
+
+            </div>
+        </div>
+    </main>
+
+    <br/>
+
+    <footer class="bg-primary text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+    
+      
+            <!-- CSDN -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://blog.csdn.net/weixin_46628481"
+              role="button"
+              target="_blank"
+              ><i class="fas fa-at"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/1643863272"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white" href="https://blog.csdn.net/weixin_46628481">MyCSDN</a>
+        </div>
+    </footer>
+
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="../../MDB-Pro-4.12/MDB-Pro-4.12/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../../MDB-Pro-4.12/MDB-Pro-4.12/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../../MDB-Pro-4.12/MDB-Pro-4.12/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../../MDB-Pro-4.12/MDB-Pro-4.12/js/mdb.min.js"></script>
+  
+  <script type="text/javascript">
+    $('#exit-a').click(function () {
+        window.location.replace("../../MDB-Pro-4.12/MDB-Pro-4.12/index.html"); 
+    });
+
+    // 根据tab找对应的content
+    function find_con_by_tab($tab) {
+        return $($tab.attr('t-title'));
+    }
+
+    var $pill_nav = $('#ex1');
+    var $pill_con = $('#ex1-content');
+
+    var $now_tab = $('#ex1-tab-1');
+    var $now_con = find_con_by_tab($now_tab);
+
+    $('.the-tab').click(function () {
+        // 点击是当前tab，不改变
+        if($(this).get(0) == $now_tab.get(0)){
+            return;
+        }
+        // 关闭之前的tab和content
+        $now_con.fadeOut(1);
+        $now_tab.attr('class','nav-link the-tab');
+        // 打开点击的tab和content
+        $now_tab = $(this);
+        $now_con = find_con_by_tab($now_tab);
+        $now_tab.attr('class','nav-link the-tab active');
+        $now_con.fadeIn();
+
+    });
+
+
+  </script>
+
+</body>
+</html>
